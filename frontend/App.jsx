@@ -17,7 +17,7 @@ export default function App() {
     const prompt = `Evaluate the following date for the event type "${eventType}" using Hindu Panchang and astrological traditions. Date: ${selectedDate}. Provide a score from 1 to 10 and reasoning.`;
 
     try {
-      const res = await fetch("https://goodday-api.onrender.com/api/gpt-evaluate", {
+      const res = await fetch("https://good-day-fullstack1.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
